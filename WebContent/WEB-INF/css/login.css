@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+body{
+	background: url(../img/background.jpg);
+}
+h1,h2{
+	margin: 0;
+	padding: 0;
+}
+.left{
+	position: absolute;
+	top: 55px;
+	left: 200px;
+	display: inline-block;
+}
+.tu{
+	border: 2px solid #795548;
+	border-radius:6px;
+}
+.right{
+	width: 400px;
+	height: 400px;
+	display: inline-block;
+	border: 1px solid #CDB38B;
+	border-radius: 6px;
+	position: relative;
+	top: 100px;
+	left: 900px;
+	box-shadow:inset 0 0 10px #0CC;
+	background: rgba(148,84,56,0.1);
+	text-align: center;
+}
+.right h2{
+	text-align: center;
+	font-weight: normal;
+	color: #333;
+	margin: 5px 0 0 0;
+}
+#user{
+	margin: 30px 0 0 0px;
+	width: 300px;
+	height: 40px;
+	background-color: transparent;
+	background: url(../img/user-blue.png) no-repeat;
+	background-position: 2px 3px;
+	background-size:35px 35px;
+	padding: 0 0 0 45px;
+	border: 1px solid #0cc;
+	font-size: 20px;
+	border-radius: 6px;
+	outline: 0;
+	
+}
+#psw{
+	margin: 30px 0 0 0px;
+	width: 300px;
+	height: 40px;
+	background-color: transparent;
+	background: url(../img/lock.png) no-repeat;
+	background-position: 5px 3px;
+	background-size:30px 35px;
+	padding: 0 0 0 45px;
+	border: 1px solid #0cc;
+	font-size: 20px;
+	border-radius: 6px;
+	outline: 0;
+}
+input::-webkit-input-placeholder{
+	font-style:italic;
+    letter-spacing:3px;
+    color:#999;
+}
+#rem,#autologin{
+	width: 20px;
+	height: 20px;
+	margin: 30px 0px 0 20px;
+}
+label{
+	text-align: center;
+	font-family: "微软雅黑";
+	font-size: 18px;
+	color:#000 ;
+	position: relative;
+	top: -4px;
+	left: 3px;
+}
+#login{
+	
+}
+
+
+
+
+@-webkit-keyframes bluePulse {
+  from { background-color: #007d9a; -webkit-box-shadow: 0 0 9px #333; }
+  50% { background-color: #2daebf; -webkit-box-shadow: 0 0 18px #2daebf; }
+  to { background-color: #007d9a; -webkit-box-shadow: 0 0 9px #333; }
+}
+
+
+a.button {
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite; 
+}
+
+.blue.button { 
+	text-align: center;
+	line-height: 50px;
+	display: inline-block;
+	-webkit-animation-name: bluePulse; -webkit-animation-duration: 4s;
+	width: 320px;
+	height: 50px;
+	margin: 20px 0 0 0px;
+	border: 1px solid blue;
+	border-radius: 6px;
+	outline: 0; 
+	font-size: 20px;
+	cursor: pointer;
+	
+}
+.load{
+	background: url(../img/loginload.gif) no-repeat;
+	background-size: 30px 30px;
+	background-position: 90px 11px;
+}
+.jnz{
+	color: #3298ae;
+	display: inline-block;
+	margin: 20px;
+	text-align: center;
+	text-decoration: none;
+	
+}
+.jnz:hover{
+	color: #fff;
+}
+#error{
+	background: url(../img/error.png) no-repeat 20px center;
+	line-height: 26px;
+	font-size: 14px;
+	font-weight: bold;
+	text-indent: 40px;
+	color: #666;
+}
+
